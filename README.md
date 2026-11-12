@@ -14,3 +14,6 @@ Regras de produção;
 Motor de inferência.
 
 O sistema apresenta possíveis hipóteses com base nas respostas fornecidas pelo usuário. Os resultados não substituem uma avaliação técnica presencial, sendo recomendada a procura por uma assistência técnica para confirmar o problema.
+
+12/11/2026
+implementamos mais 6 regras, totalizando 22 regras
