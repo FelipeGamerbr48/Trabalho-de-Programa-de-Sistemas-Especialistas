@@ -118,6 +118,42 @@ regras = [
         "condicoes": {"pouca_ram", "pc_lento"},
         "conclusao": "possivel_insuficiencia_memoria_ram"
     },
+  # REGRA 17
+    {
+        "nome": "Regra 17",
+        "condicoes": {"pc_nao_liga", "cheiro_queimado"},
+        "conclusao": "possivel_componente_eletronico_danificado"
+    },
+    # REGRA 18
+    {
+        "nome": "Regra 18",
+        "condicoes": {"pc_reinicia_sozinho", "pc_esquenta"},
+        "conclusao": "possivel_superaquecimento"
+    },
+    # REGRA 19
+    {
+        "nome": "Regra 19",
+        "condicoes": {"pc_travando", "pouca_ram"},
+        "conclusao": "possivel_insuficiencia_memoria_ram"
+    },
+    # REGRA 20
+    {
+        "nome": "Regra 20",
+        "condicoes": {"monitor_com_linhas", "imagem_distorcida"},
+        "conclusao": "possivel_defeito_no_monitor"
+    },
+    # REGRA 21
+    {
+        "nome": "Regra 21",
+        "condicoes": {"nao_reconhece_armazenamento", "nao_inicia_sistema"},
+        "conclusao": "possivel_problema_no_armazenamento"
+    },
+    # REGRA 22
+    {
+        "nome": "Regra 22",
+        "condicoes": {"ventoinha_nao_gira", "pc_esquenta"},
+        "conclusao": "possivel_falha_sistema_refrigeracao"
+    },
 ]
 
 
@@ -289,49 +325,43 @@ def iniciar_sistema():
     )
 
     # --------------------------------------------------------
-    # Perguntas referentes as novas regras (Regras 11 a 16)
+    # Perguntas referentes as novas regras (Regras 17 a 22)
     # --------------------------------------------------------
 
     perguntar(
-        "O computador sofreu alguma batida ou queda?",
-        "houve_batida",
-        "sem_batida"
+        "Ha cheiro de queimado vindo do computador?",
+        "cheiro_queimado",
+        "sem_cheiro_queimado"
     )
 
     perguntar(
-        "Caiu algum liquido no computador?",
-        "caiu_liquido",
-        "sem_liquido"
+        "O computador reinicia sozinho?",
+        "pc_reinicia_sozinho",
+        "pc_nao_reinicia_sozinho"
     )
 
     perguntar(
-        "Depois disso, o computador comecou a apresentar falhas?",
-        "pc_apresenta_falhas",
-        "pc_sem_falhas"
+        "O computador apresenta travamentos frequentes?",
+        "pc_travando",
+        "pc_nao_travando"
     )
 
     perguntar(
-        "Existe sujeira acumulada dentro do gabinete?",
-        "sujeira_acumulada",
-        "sem_sujeira"
+        "O monitor apresenta linhas na tela?",
+        "monitor_com_linhas",
+        "monitor_sem_linhas"
     )
 
     perguntar(
-        "Foi baixado ou instalado algum aplicativo nao oficial?",
-        "aplicativo_nao_oficial",
-        "sem_aplicativo_nao_oficial"
+        "O computador nao reconhece o HD ou SSD?",
+        "nao_reconhece_armazenamento",
+        "reconhece_armazenamento"
     )
 
     perguntar(
-        "Existe suspeita de mau contato em algum componente ou conexao?",
-        "mau_contato",
-        "sem_mau_contato"
-    )
-
-    perguntar(
-        "O computador possui pouca memoria RAM?",
-        "pouca_ram",
-        "ram_suficiente"
+        "Alguma ventoinha (cooler) deixou de girar?",
+        "ventoinha_nao_gira",
+        "ventoinha_gira"
     )
 
 
