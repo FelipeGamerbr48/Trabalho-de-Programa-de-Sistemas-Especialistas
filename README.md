@@ -17,4 +17,4 @@ O sistema apresenta possíveis hipóteses com base nas respostas fornecidas pelo
 
 12/11/2026
 
-implementamos mais 6 regras, totalizando 22 regras
+Implementadas seis novas regras ao sistema especialista, ampliando sua capacidade de identificar possíveis problemas em computadores. Também foram adicionadas as perguntas correspondentes para permitir a análise das novas condições.
