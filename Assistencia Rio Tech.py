@@ -1,14 +1,9 @@
-# ============================================================
 # SISTEMA ESPECIALISTA - ASSISTENCIA TECNICA DE COMPUTADORES
 # Area: Gabinete e monitor
 # Tecnica: Regras de producao
 # Motor de inferencia: Encadeamento para frente
-# ============================================================
 
-
-# ------------------------------------------------------------
 # 1. BASE DE CONHECIMENTO
-# ------------------------------------------------------------
 
 # Armazena os fatos identificados durante a consulta ao usuario.
 fatos = set()
@@ -16,10 +11,7 @@ fatos = set()
 # Armazena os diagnosticos encontrados pelo sistema.
 diagnosticos = set()
 
-
-# ------------------------------------------------------------
 # 2. REGRAS DE PRODUCAO
-# ------------------------------------------------------------
 
 regras = [
     # REGRA 1
@@ -156,11 +148,7 @@ regras = [
     },
 ]
 
-
-
-# ------------------------------------------------------------
 # 3. MOTOR DE INFERENCIA
-# ------------------------------------------------------------
 
 def motor_inferencia(fatos):
 
@@ -200,10 +188,7 @@ def motor_inferencia(fatos):
     # Retorna os diagnosticos encontrados.
     return diagnosticos
 
-
-# ------------------------------------------------------------
 # 4. COLETA DE INFORMACOES
-# ------------------------------------------------------------
 
 def perguntar(pergunta, fato_sim, fato_nao):
 
@@ -225,10 +210,7 @@ def perguntar(pergunta, fato_sim, fato_nao):
         # Repete a pergunta em caso de resposta invalida.
         return perguntar(pergunta, fato_sim, fato_nao)
 
-
-# ------------------------------------------------------------
 # 5. INTERFACE DO SISTEMA
-# ------------------------------------------------------------
 
 def iniciar_sistema():
 
@@ -247,10 +229,7 @@ def iniciar_sistema():
 
     print("-" * 55)
 
-
-   # --------------------------------------------------------
     # Perguntas sobre o computador e o monitor
-    # --------------------------------------------------------
 
     perguntar(
         "O computador liga?",
@@ -324,9 +303,7 @@ def iniciar_sistema():
         "inicia_sistema"
     )
 
-    # --------------------------------------------------------
     # Perguntas referentes as novas regras (Regras 17 a 22)
-    # --------------------------------------------------------
 
     perguntar(
         "Ha cheiro de queimado vindo do computador?",
@@ -364,11 +341,8 @@ def iniciar_sistema():
         "ventoinha_gira"
     )
 
-
-    # --------------------------------------------------------
     # 6. EXECUCAO DO MOTOR DE INFERENCIA
-    # --------------------------------------------------------
-
+   
     print("\n" + "=" * 55)
 
     print(" ANALISANDO AS INFORMACOES")
@@ -376,11 +350,8 @@ def iniciar_sistema():
     print("=" * 55)
 
     resultado = motor_inferencia(fatos)
-
-
-    # --------------------------------------------------------
+    
     # 7. APRESENTACAO DOS RESULTADOS
-    # --------------------------------------------------------
 
     print("\n" + "=" * 55)
 
@@ -429,8 +400,6 @@ def iniciar_sistema():
     print("=" * 55)
 
 
-# ------------------------------------------------------------
 # 8. EXECUCAO DO PROGRAMA
-# ------------------------------------------------------------
 
 iniciar_sistema()
