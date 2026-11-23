@@ -1,20 +1,25 @@
 # Trabalho-de-Programa-de-Sistemas-Especialistas
-11/11/2026
 
-Este projeto consiste em um sistema especialista desenvolvido em Python, com o objetivo de identificar possíveis problemas em computadores, considerando componentes internos do gabinete e o monitor.
-O sistema realiza perguntas ao usuário sobre o funcionamento do computador e utiliza uma base de conhecimento com 16 regras de produção para encontrar possíveis hipóteses de defeitos.
+## Sobre o Projeto
+Este projeto consiste em um sistema especialista desenvolvido em Python com o objetivo de auxiliar no diagnóstico de possíveis falhas em computadores, analisando sintomas relacionados aos componentes internos do gabinete e ao monitor.
 
-Tecnologias utilizadas:
-Python 3;
-PyCharm;
-Estruturas condicionais e de repetição;
-Conjuntos (set) e listas;
-Funções;
-Regras de produção;
-Motor de inferência.
+A aplicação conduz um questionário interativo com o usuário sobre o comportamento da máquina e processa as respostas através de uma base de conhecimento composta por **22 regras de produção**, inferindo as hipóteses de defeito mais prováveis.
 
-O sistema apresenta possíveis hipóteses com base nas respostas fornecidas pelo usuário. Os resultados não substituem uma avaliação técnica presencial, sendo recomendada a procura por uma assistência técnica para confirmar o problema.
+> **Aviso:** Os resultados apresentados têm caráter exclusivamente orientativo e não substituem uma avaliação técnica presencial. Recomenda-se consultar uma assistência técnica especializada para confirmar o diagnóstico.
 
-12/11/2026
+---
 
-Implementadas seis novas regras ao sistema especialista, ampliando sua capacidade de identificar possíveis problemas em computadores. Também foram adicionadas as perguntas correspondentes para permitir a análise das novas condições.
+## Tecnologias e Conceitos Utilizados
+* **Linguagem:** Python 3
+* **IDE:** PyCharm
+* **Estruturas de dados e controle:** Conjuntos (`set`), listas, estruturas condicionais e de repetição
+* **Arquitetura:** Modularização com funções, base de conhecimento baseada em regras de produção e motor de inferência
+
+---
+
+## Como Executar
+1. Certifique-se de ter o **Python 3** instalado na máquina.
+2. Clone o repositório ou baixe o arquivo `Assistencia Rio Tech.py`.
+3. Execute o script pelo terminal ou diretamente pelo PyCharm:
+   ```bash
+   python "Assistencia Rio Tech.py"
