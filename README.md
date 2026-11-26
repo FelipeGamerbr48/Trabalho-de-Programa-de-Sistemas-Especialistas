@@ -2,13 +2,13 @@
 
 ## 1. Sobre o Projeto
 
-Este projeto consiste no desenvolvimento de um **Sistema Especialista utilizando a linguagem Python**, com a finalidade de auxiliar na identificação de possíveis problemas e falhas em computadores, considerando sintomas relacionados aos componentes internos do gabinete e ao monitor.
+Este projeto consiste no desenvolvimento de um **Sistema Especialista utilizando a linguagem de programação Python**, com o objetivo de auxiliar na identificação e no diagnóstico de possíveis problemas e falhas em computadores, considerando sintomas relacionados aos componentes internos do gabinete e ao monitor.
 
-O sistema realiza uma consulta interativa com o usuário, apresentando perguntas sobre o funcionamento do computador e coletando informações sobre os sintomas observados. Com base nas respostas fornecidas, o programa utiliza uma base de conhecimento composta por **22 regras de produção** para analisar os fatos identificados e gerar possíveis diagnósticos.
+O sistema funciona por meio de uma interação com o usuário, apresentando perguntas sobre o funcionamento do computador e coletando informações a respeito dos sintomas identificados. A partir das respostas fornecidas, o programa consulta uma base de conhecimento composta por **22 regras de produção**, responsáveis por relacionar os sintomas apresentados às possíveis causas dos problemas.
 
-O processo de análise é realizado por meio de um motor de inferência que utiliza a técnica de **encadeamento para frente (Forward Chaining)**, permitindo relacionar os sintomas informados às hipóteses de problemas cadastradas na base de conhecimento.
+Para realizar essa análise, o sistema utiliza um motor de inferência baseado na técnica de **encadeamento para frente (Forward Chaining)**, que parte dos fatos informados pelo usuário e aplica as regras correspondentes para chegar a possíveis diagnósticos.
 
-O objetivo principal é demonstrar a aplicação dos conceitos de Inteligência Artificial e Sistemas Especialistas na resolução de problemas práticos, simulando parte do processo de análise realizado em uma assistência técnica de computadores.
+Dessa forma, o principal objetivo do projeto é demonstrar, na prática, a aplicação de conceitos de **Inteligência Artificial e Sistemas Especialistas** na resolução de problemas do cotidiano, simulando o processo de identificação e diagnóstico de falhas realizado por profissionais de assistência técnica em informática.
 
 **Importante:** Os diagnósticos apresentados pelo sistema possuem caráter exclusivamente orientativo. Eles representam possíveis causas para os problemas identificados e não substituem uma avaliação técnica presencial. Para confirmar qualquer defeito, recomenda-se procurar um profissional especializado.
 
